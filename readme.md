@@ -1,4 +1,9 @@
 AI Talking Dog
+
+<p>
+  <img src="presentation.JPG" width="350" title="AI Talking Dog">
+</p>
+
 ============
 ## Description
 Chat with AI dog
