@@ -1,8 +1,6 @@
 AI Talking Dog
 
-<p>
-  <img src="presentation.JPG" width="350" title="AI Talking Dog">
-</p>
+<p><img src="presentation.JPG" width="1015"></p>
 
 ============
 ## Description
