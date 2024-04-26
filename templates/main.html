@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI talking dog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<header>
+    <h1>AI Dog will answer all your questions</h1>
+</header>
+<main>
+    <div class="container">
+        <img src="{{ url_for('static', filename='Baldi.jpg') }}" alt="Smiled Labrador">
+
+        <form action="/answer" method="post">
+            <input type="text" id="questionInput" name="questionInput" placeholder="Ask me question and... give me some cookies">
+            <button onclick="askQuestion()">Ask</button>
+            <div>
+                {% if result_message %}
+                <div id="answerDisplay">{{ result_message }}</div>
+                {% endif %}
+            </div><br>
+            <button type="button" onclick="clearQuestion()">Clear</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>AI Dog is never wrong in his answers</p>
+</footer>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
